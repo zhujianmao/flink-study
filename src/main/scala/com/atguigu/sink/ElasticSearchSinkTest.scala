@@ -33,7 +33,7 @@ object ElasticSearchSinkTest {
     val esBuilder: ElasticsearchSink.Builder[String] = new ElasticsearchSink.Builder[String](hosts, new ElasticsearchSinkFunction[String] {
       override def process(t: String, runtimeContext: RuntimeContext, requestIndexer: RequestIndexer): Unit = {
 
-        val map:util.Map[String,String] =new  util.HashMap[String,String]()
+        val map:util.Map[String,String] = new  util.HashMap[String,String]()
         map.put("data",t)
 
         val indexRequest: IndexRequest = Requests.indexRequest("sensor")
