@@ -2,6 +2,7 @@ package com.atguigu.day02.window
 
 import com.atguigu.day01.source.SensorReading
 import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.windowing.assigners.TumblingProcessingTimeWindows
 import org.apache.flink.streaming.api.windowing.time.Time
 
 object TumblingTimeWindow {
@@ -17,7 +18,8 @@ object TumblingTimeWindow {
       SensorReading(splits(0), splits(1).toLong, splits(2).toDouble)
     })
     sensorReadingStream.keyBy(_.id)
-      .timeWindow(Time.seconds(15))
+    //  .timeWindow(Time.seconds(15))
+      .window(TumblingProcessingTimeWindows.of(Time.days(1),Time.hours(8)))
       .minBy("temperature")
       .print("min")
 

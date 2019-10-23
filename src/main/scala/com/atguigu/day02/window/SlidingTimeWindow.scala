@@ -2,6 +2,7 @@ package com.atguigu.day02.window
 
 import com.atguigu.day01.source.SensorReading
 import org.apache.flink.streaming.api.scala._
+import org.apache.flink.streaming.api.windowing.assigners.SlidingProcessingTimeWindows
 import org.apache.flink.streaming.api.windowing.time.Time
 
 object SlidingTimeWindow {
@@ -16,7 +17,8 @@ object SlidingTimeWindow {
       SensorReading(splits(0), splits(1).toLong, splits(2).toDouble)
     })
     sensorReadingStream.keyBy(_.id)
-      .timeWindow(Time.seconds(15), Time.seconds(5))
+//      .timeWindow(Time.seconds(15), Time.seconds(5))
+      .window(SlidingProcessingTimeWindows.of(Time.seconds(15),Time.seconds(5),Time.hours(-8)))
       .minBy("temperature")
       .print("min")
 

@@ -2,109 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2caa4fc1-dae6-41ba-a658-3105844b4fdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/KeyedProcessFunctionTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/SideOutProcessFunctionTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/ProcessTimeWindow.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/TumblingTimeWindow.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/10786.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/10786.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/FlatMapStatTest.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/MyFlatMapFunction.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/LatenessAndSideOutTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sensor,.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sensor,.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/sink/ElasticSearchSinkTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/ElasticSearchSinkTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/sink/KafkaSinkTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/KafkaSinkTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/sink/MySqlSink.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/MySqlSink.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/sink/RedisSinkTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/RedisSinkTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/CollectionSourceTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/CollectionSourceTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/FileSourceTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/FileSourceTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/KafkaSourceTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/KafkaSourceTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/source/MySource.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/MySource.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/transform/ConnectTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/ConnectTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/transform/KeyByTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/KeyByTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/transform/SplitTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/SplitTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/transform/UnionTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/UnionTest.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/wc/BatchWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/wc/BatchWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/wc/StreamWordCount.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/wc/StreamWordCount.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/ElasticSearchSinkTest$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/ElasticSearchSinkTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/ElasticSearchSinkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/KafkaSinkTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/KafkaSinkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MyRedisMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MySqlSink$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MySqlSink$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MySqlSink$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MySqlSink$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MySqlSink$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/MySqlSink.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/People$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/People.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/RedisSinkTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/sink/RedisSinkTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/CollectionSourceTest$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/CollectionSourceTest$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/CollectionSourceTest$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/CollectionSourceTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/CollectionSourceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/FileSourceTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/FileSourceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/KafkaSourceTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/KafkaSourceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource$$anonfun$run$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/MySource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/SensorReading$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/source/SensorReading.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anon$3$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anon$3$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anon$4$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anon$4$$anonfun$createSerializer$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anon$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/ConnectTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest$$anon$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/KeyByTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/SplitTest$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/SplitTest$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/SplitTest$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/SplitTest$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/SplitTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/SplitTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/UnionTest$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/UnionTest$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/UnionTest$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/UnionTest$$anonfun$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/UnionTest$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/transform/UnionTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/BatchWordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$$anon$2$$anon$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$$anon$2$$anonfun$createSerializer$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$$anon$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$$anonfun$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$$anonfun$main$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$$anonfun$main$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount$.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/atguigu/wc/StreamWordCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/sensor,.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/sensor,.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/KeyedProcessFunctionTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/KeyedProcessFunctionTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/TumblingTimeWindow.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/TumblingTimeWindow.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -121,34 +28,35 @@
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="11" />
-          <entry key="java" value="50" />
-          <entry key="scala" value="93" />
-          <entry key="txt" value="8" />
-          <entry key="xml" value="9" />
+          <entry key="class" value="17" />
+          <entry key="java" value="96" />
+          <entry key="scala" value="151" />
+          <entry key="txt" value="10" />
+          <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="11" />
-          <entry key="JAVA" value="50" />
-          <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Scala" value="93" />
-          <entry key="XML" value="9" />
+          <entry key="CLASS" value="17" />
+          <entry key="JAVA" value="96" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Scala" value="151" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="92" />
-          <entry key="scala" value="6413" />
+          <entry key="scala" value="8050" />
           <entry key="txt" value="80" />
           <entry key="xml" value="7" />
         </counts>
@@ -157,7 +65,7 @@
         <counts>
           <entry key="JAVA" value="92" />
           <entry key="PLAIN_TEXT" value="80" />
-          <entry key="Scala" value="6413" />
+          <entry key="Scala" value="8050" />
           <entry key="XML" value="7" />
         </counts>
       </usages-collector>
@@ -168,25 +76,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-              <folding>
-                <element signature="e#37#82#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/FlatMapStatTest.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+            <state relative-caret-position="14">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#37#82#0" expanded="true" />
+                <element signature="e#32#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -205,6 +101,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>MyRedisMapper</find>
+      <find>autoWatermarkInterval</find>
+      <find>R: TypeInformation</find>
+      <find>S: TypeInformation</find>
+      <find>CheckpointCommitter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -241,15 +141,21 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/SlidingTimeWindow.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/ProcessTimeWindow.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/ProcessTimeWindow.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/TumblingTimeWindow.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/WaterMakerTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/KeyedProcessFucntionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/sensor,.txt" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/TumblingTimeWindow.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/KeyByTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/CoProcessFunctionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/SideOutProcessFunctionTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/KeyedProcessFunctionTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/BoundedOutOfOrdernessTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/LatenessAndSideOutTest.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/MyFlatMapFunction.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/FlatMapStatTest.scala" />
       </list>
     </option>
   </component>
@@ -290,10 +196,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="356" />
-    <option name="y" value="16" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="1455" />
-    <option name="height" value="875" />
+    <option name="height" value="843" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -304,6 +210,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -361,30 +269,18 @@
               <item name="scala" type="462c0819:PsiDirectoryNode" />
               <item name="atguigu" type="462c0819:PsiDirectoryNode" />
               <item name="day02" type="462c0819:PsiDirectoryNode" />
-              <item name="processFunctionApi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink-Tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink-Tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="scala" type="462c0819:PsiDirectoryNode" />
-              <item name="atguigu" type="462c0819:PsiDirectoryNode" />
-              <item name="day02" type="462c0819:PsiDirectoryNode" />
-              <item name="watermark" type="462c0819:PsiDirectoryNode" />
+              <item name="stat" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571705317072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571835574561" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -414,13 +310,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SideOutProcessFunctionTest">
+  <component name="RunManager" selected="Application.FlatMapStatTest">
+    <configuration name="FlatMapStatTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.stat.FlatMapStatTest" />
+      <module name="Flink-Tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.day02.stat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="KeyedProcessFunctionTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.processFunctionApi.KeyedProcessFunctionTest" />
       <module name="Flink-Tutorial" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.atguigu.day02.processFunctionApi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LatenessAndSideOutTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.watermark.LatenessAndSideOutTest" />
+      <module name="Flink-Tutorial" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.day02.watermark.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -441,38 +363,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessTimeWindow" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.window.ProcessTimeWindow" />
+    <configuration name="MyFlatMapFunction" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.stat.MyFlatMapFunction" />
       <module name="Flink-Tutorial" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.day02.window.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SideOutProcessFunctionTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.processFunctionApi.SideOutProcessFunctionTest" />
-      <module name="Flink-Tutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.day02.processFunctionApi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WaterMakerTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day02.watermark.MyAssignerTimestampsAndWatermarksTest" />
-      <module name="Flink-Tutorial" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.day02.watermark.*" />
+          <option name="PATTERN" value="com.atguigu.day02.stat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -481,19 +377,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ProcessTimeWindow" />
-      <item itemvalue="Application.WaterMakerTest" />
       <item itemvalue="Application.MyAssignerPunctuatedWatermarksTest" />
       <item itemvalue="Application.KeyedProcessFunctionTest" />
-      <item itemvalue="Application.SideOutProcessFunctionTest" />
+      <item itemvalue="Application.LatenessAndSideOutTest" />
+      <item itemvalue="Application.MyFlatMapFunction" />
+      <item itemvalue="Application.FlatMapStatTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SideOutProcessFunctionTest" />
+        <item itemvalue="Application.FlatMapStatTest" />
+        <item itemvalue="Application.MyFlatMapFunction" />
+        <item itemvalue="Application.LatenessAndSideOutTest" />
         <item itemvalue="Application.KeyedProcessFunctionTest" />
         <item itemvalue="Application.MyAssignerPunctuatedWatermarksTest" />
-        <item itemvalue="Application.WaterMakerTest" />
-        <item itemvalue="Application.ProcessTimeWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -511,7 +407,8 @@
       <workItem from="1571443955752" duration="5936000" />
       <workItem from="1571537213117" duration="19035000" />
       <workItem from="1571617044968" duration="15231000" />
-      <workItem from="1571703277170" duration="2035000" />
+      <workItem from="1571703277170" duration="15540000" />
+      <workItem from="1571793552524" duration="13610000" />
     </task>
     <task id="LOCAL-00001" summary="更新">
       <created>1571617534797</created>
@@ -527,17 +424,24 @@
       <option name="project" value="LOCAL" />
       <updated>1571617752620</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="更新">
+      <created>1571705335280</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571705335280</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52967000" />
+    <option name="totallyTimeSpent" value="80082000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="846" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4985507" visible="true" weight="0.29758713" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4985507" visible="true" weight="0.20911528" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -546,8 +450,8 @@
       <window_info id="Favorites" order="6" sideWeight="0.5014493" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3280116" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28447026" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3773585" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41944847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -578,367 +482,394 @@
     <option name="LAST_COMMIT_MESSAGE" value="更新" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/source/FromElementsFunction.java">
+    <entry file="jar://E:/maven/org/apache/flink/flink-connector-kafka-0.11_2.11/1.7.2/flink-connector-kafka-0.11_2.11-1.7.2.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer011.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="52" column="33" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="33" />
+        <state relative-caret-position="221">
+          <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/KafkaSourceTest.scala">
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/serialization/DeserializationSchema.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="28" column="36" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_51/src.zip!/java/util/Properties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1610">
-          <caret line="138" column="11" selection-start-line="138" selection-start-column="11" selection-end-line="138" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/MySource.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="24" column="39" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="39" />
+        <state relative-caret-position="221">
+          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/FileSourceTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        <state relative-caret-position="75">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0.jar!/org/apache/flink/streaming/connectors/redis/RedisSink.class">
+    <entry file="jar://E:/maven/org/apache/flink/flink-connector-kafka-base_2.11/1.7.2/flink-connector-kafka-base_2.11-1.7.2.jar!/org/apache/flink/streaming/util/serialization/KeyedDeserializationSchema.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
+        <state relative-caret-position="175">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-sources.jar!/org/apache/flink/streaming/connectors/redis/RedisSink.java">
+    <entry file="jar://E:/maven/org/apache/flink/flink-connector-kafka-0.11_2.11/1.7.2/flink-connector-kafka-0.11_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaConsumer011.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="105" column="21" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        <state relative-caret-position="421">
+          <caret line="80" column="66" selection-start-line="80" selection-start-column="66" selection-end-line="80" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-sources.jar!/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisConfigBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/KafkaSourceTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="23" column="3" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+        <state relative-caret-position="289">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-sources.jar!/org/apache/flink/streaming/connectors/redis/common/mapper/RedisCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/MySource.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+        <state relative-caret-position="139">
+          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-sources.jar!/org/apache/flink/streaming/connectors/redis/common/mapper/RedisCommandDescription.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-sources.jar!/org/apache/flink/streaming/connectors/redis/common/mapper/RedisMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="41" column="29" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/bahir/flink-connector-redis_2.11/1.0/flink-connector-redis_2.11-1.0-sources.jar!/org/apache/flink/streaming/connectors/redis/common/config/FlinkJedisPoolConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/RedisSinkTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/KafkaSinkTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="27" column="40" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="27" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/MySqlSink.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-connector-elasticsearch-base_2.11/1.7.2/flink-connector-elasticsearch-base_2.11-1.7.2.jar!/org/apache/flink/streaming/connectors/elasticsearch/RequestIndexer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-connector-elasticsearch-base_2.11/1.7.2/flink-connector-elasticsearch-base_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/connectors/elasticsearch/BufferingNoOpRequestIndexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-connector-elasticsearch-base_2.11/1.7.2/flink-connector-elasticsearch-base_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/connectors/elasticsearch/RequestIndexer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/elasticsearch/elasticsearch/6.3.1/elasticsearch-6.3.1.jar!/org/elasticsearch/action/index/IndexRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/elasticsearch/elasticsearch/6.3.1/elasticsearch-6.3.1-sources.jar!/org/elasticsearch/action/index/IndexRequest.java">
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/aggregation/ComparableAggregator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
-          <caret line="73" column="13" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
+          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/ElasticSearchSinkTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/source/CollectionSourceTest.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/KeyByTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
-          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/TumblingTimeWindow.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/SlidingTimeWindow.scala" />
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/windowing/assigners/WindowAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-scala_2.11/1.7.2/flink-streaming-scala_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="284" column="50" selection-start-line="284" selection-start-column="36" selection-end-line="284" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/windowing/assigners/ProcessingTimeSessionWindows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="44" column="41" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/ProcessTimeWindow.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/ProcessTimeWindow.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="21" column="27" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="21" selection-end-column="27" />
-          <folding>
-            <element signature="e#34#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-scala_2.11/1.7.2/flink-streaming-scala_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/scala/StreamExecutionEnvironment.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="762" column="55" selection-start-line="762" selection-start-column="55" selection-end-line="762" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironmentFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/environment/StreamExecutionEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="1595" column="45" selection-start-line="1595" selection-start-column="45" selection-end-line="1595" selection-end-column="45" />
-          <folding>
-            <element signature="e#76525#76526#0" expanded="true" />
-            <element signature="e#76569#76570#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/ExecutionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="220" column="51" selection-start-line="220" selection-start-column="27" selection-end-line="220" selection-end-column="51" />
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/maven/org/apache/flink/flink-streaming-scala_2.11/1.7.2/flink-streaming-scala_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/scala/DataStream.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="855" column="39" lean-forward="true" selection-start-line="855" selection-start-column="39" selection-end-line="855" selection-end-column="39" />
+        <state relative-caret-position="213">
+          <caret line="921" column="66" lean-forward="true" selection-start-line="921" selection-start-column="66" selection-end-line="921" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/datastream/DataStream.java">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/transform/SplitTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="1189" column="70" selection-start-line="1189" selection-start-column="70" selection-end-line="1189" selection-end-column="70" />
-          <folding>
-            <element signature="e#48567#48613#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="239">
+          <caret line="20" column="74" selection-start-line="20" selection-start-column="74" selection-end-line="20" selection-end-column="74" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/TumblingTimeWindow.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day01/sink/KafkaSinkTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="35" />
+        <state relative-caret-position="250">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/windowing/assigners/WindowAssigner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/windowing/assigners/SlidingProcessingTimeWindows.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/SlidingTimeWindow.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="42" />
           <folding>
             <element signature="e#34#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/window/ProcessTimeWindow.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="e#34#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/watermark/Watermark.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="54" column="11" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/AssignerWithPeriodicWatermarks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="52" column="63" selection-start-line="52" selection-start-column="63" selection-end-line="52" selection-end-column="63" />
+        <state relative-caret-position="139">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="17" selection-end-line="52" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/functions/Function.java">
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/datastream/KeyedStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
+        <state relative-caret-position="371">
+          <caret line="624" column="7" selection-start-line="624" selection-start-column="7" selection-end-line="624" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/TimestampAssigner.java">
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/ExecutionConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="54" />
+        <state relative-caret-position="2400">
+          <caret line="129" column="38" selection-start-line="129" selection-start-column="17" selection-end-line="129" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/AssignerWithPunctuatedWatermarks.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="66" column="78" selection-start-line="66" selection-start-column="61" selection-end-line="66" selection-end-column="78" />
+        <state relative-caret-position="150">
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#37#82#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/maven/org/apache/flink/flink-streaming-scala_2.11/1.7.2/flink-streaming-scala_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/scala/OutputTag.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="34" />
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/KeyedProcessFunction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
-          <caret line="18" column="48" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="48" />
+          <caret line="111" column="49" selection-start-line="111" selection-start-column="40" selection-end-line="111" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/sensor,.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="22" lean-forward="true" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/co/CoProcessFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/CoProcessFunctionTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
-          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/ProcessFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="111" column="36" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/datastream/SingleOutputStreamOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="406" column="77" selection-start-line="406" selection-start-column="77" selection-end-line="406" selection-end-column="77" />
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+          <folding>
+            <element signature="e#46#91#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/SideOutProcessFunctionTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        <state relative-caret-position="338">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#46#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/state/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="37" column="58" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="37" selection-end-column="58" />
+          <folding>
+            <element signature="e#37#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/timestamps/BoundedOutOfOrdernessTimestampExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="31" column="61" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="61" />
+          <folding>
+            <element signature="e#2618#2619#0" expanded="true" />
+            <element signature="e#2649#2650#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/LatenessAndSideOutTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-633">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+          <folding>
+            <element signature="e#37#82#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/processFunctionApi/KeyedProcessFunctionTest.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+        <state relative-caret-position="167">
+          <caret line="27" column="48" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="27" selection-end-column="48" />
           <folding>
             <element signature="e#46#91#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerTimestampsAndWatermarksTest.scala">
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/functions/RichFlatMapFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+        <state relative-caret-position="138">
+          <caret line="33" column="49" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/functions/AbstractRichFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/state/ValueStateDescriptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/typeutils/TypeSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="64" column="22" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-core/1.7.2/flink-core-1.7.2-sources.jar!/org/apache/flink/api/common/state/ValueState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/operators/StreamFlatMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar!/scala/package.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="55" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/MyFlatMapFunction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="33" />
           <folding>
-            <element signature="e#37#82#0" expanded="true" />
+            <element signature="e#32#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/watermark/MyAssignerPunctuatedWatermarksTest.scala">
+    <entry file="jar://E:/maven/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/package.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="26" column="4" lean-forward="true" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        <state relative-caret-position="213">
+          <caret line="36" column="61" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12-sources.jar!/scala/collection/TraversableOnce.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="6" selection-end-line="61" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-scala_2.11/1.7.2/flink-streaming-scala_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/scala/KeyedStream.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="579" column="5" lean-forward="true" selection-start-line="579" selection-start-column="5" selection-end-line="579" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/functions/sink/TwoPhaseCommitSinkFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="77" column="33" selection-start-line="77" selection-start-column="33" selection-end-line="77" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-connector-kafka-0.11_2.11/1.7.2/flink-connector-kafka-0.11_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/connectors/kafka/FlinkKafkaProducer011.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="93" column="15" lean-forward="true" selection-start-line="93" selection-start-column="15" selection-end-line="93" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/operators/OneInputStreamOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/api/operators/AbstractStreamOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-604">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/runtime/operators/CheckpointCommitter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/org/apache/flink/flink-streaming-java_2.11/1.7.2/flink-streaming-java_2.11-1.7.2-sources.jar!/org/apache/flink/streaming/runtime/operators/GenericWriteAheadSink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="76" column="36" lean-forward="true" selection-start-line="76" selection-start-column="36" selection-end-line="76" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/atguigu/day02/stat/FlatMapStatTest.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#37#82#0" expanded="true" />
+            <element signature="e#32#77#0" expanded="true" />
           </folding>
         </state>
       </provider>

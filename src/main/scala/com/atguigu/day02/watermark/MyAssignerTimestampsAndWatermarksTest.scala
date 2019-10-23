@@ -7,13 +7,18 @@ import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.watermark.Watermark
 import org.apache.flink.streaming.api.windowing.time.Time
 
+/**
+  *   watermaker的生成的快慢会影响窗口window的关闭的快慢
+  *   也会影响延迟数据的是否进入窗口window
+  */
 object MyAssignerTimestampsAndWatermarksTest {
   def main(args: Array[String]): Unit = {
 
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime) //设置event-time语义
-    env.getConfig.setAutoWatermarkInterval(2000)
-    //env.setParallelism(1)
+    env.getConfig.setAutoWatermarkInterval(20000)
+    env.setParallelism(1)
+
     val socketDataStream: DataStream[String] = env.socketTextStream("hadoop102", 7777)
 
     val sensorReadingStream: DataStream[SensorReading] = socketDataStream.map(line => {
@@ -22,15 +27,13 @@ object MyAssignerTimestampsAndWatermarksTest {
     })
 
     val periodDataStream: DataStream[SensorReading] = sensorReadingStream
-      .assignTimestampsAndWatermarks(new MyAssigner())
+      .assignTimestampsAndWatermarks(new MyAssigner()) //设置watermaker
     periodDataStream.print("periodDataStream")
 
     periodDataStream.keyBy(_.id)
-      .timeWindow(Time.seconds(15))
+      .timeWindow(Time.seconds(5)) //设置TumblingEventTimeWindow
       .minBy("temperature")
       .print("min")
-
-
 
     env.execute("MyAssignerPunctuatedWatermarksTest test")
   }
@@ -38,7 +41,7 @@ object MyAssignerTimestampsAndWatermarksTest {
 
 class MyAssigner() extends AssignerWithPeriodicWatermarks[SensorReading] {
 
-  val delayTime: Long = 1000 //延迟时间间隔
+  val delayTime: Long = 5000 //延迟时间间隔
   var maxTime: Long = 0 // 最大的时间戳
   /**
     *  env.getConfig.setAutoWatermarkInterval(2000)
@@ -47,8 +50,8 @@ class MyAssigner() extends AssignerWithPeriodicWatermarks[SensorReading] {
     * @return
     */
   override def getCurrentWatermark: Watermark = {
-    //println("MyAssigner:"+System.currentTimeMillis())
-    new Watermark(maxTime - delayTime)
+    println("MyAssigner:"+System.currentTimeMillis())
+    new Watermark(maxTime*1000 - delayTime)
   }
 
   /**
@@ -59,7 +62,7 @@ class MyAssigner() extends AssignerWithPeriodicWatermarks[SensorReading] {
     * @return
     */
   override def extractTimestamp(element: SensorReading, previousElementTimestamp: Long): Long = {
-    println("extractTimestamp" + element)
+   // println("extractTimestamp" + element)
     maxTime = maxTime.max(element.timestamp)
     element.timestamp * 1000
   }

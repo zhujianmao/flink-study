@@ -7,13 +7,18 @@ import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.watermark.Watermark
 import org.apache.flink.streaming.api.windowing.time.Time
 
+/**
+  *   watermaker的生成的快慢会影响窗口window的关闭的快慢
+  *   也会影响延迟数据的是否进入窗口window
+  */
 object MyAssignerPunctuatedWatermarksTest {
   def main(args: Array[String]): Unit = {
 
     val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
     env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime) //设置event-time语义
     env.getConfig.setAutoWatermarkInterval(2000)
-    //env.setParallelism(1)
+    env.setParallelism(1)
+
     val socketDataStream: DataStream[String] = env.socketTextStream("hadoop102", 7777)
 
     val sensorReadingStream: DataStream[SensorReading] = socketDataStream.map(line => {
@@ -26,7 +31,7 @@ object MyAssignerPunctuatedWatermarksTest {
     punctuatedDataStream.print("punctuatedDataStream")
 
     punctuatedDataStream.keyBy(_.id)
-        .timeWindow(Time.seconds(15))
+        .timeWindow(Time.seconds(5))
         .minBy("temperature")
         .print("min")
 
@@ -39,7 +44,7 @@ class MyAssigner2() extends AssignerWithPunctuatedWatermarks[SensorReading] {
   val delayTime: Long = 1000 //延迟时间间隔
 
   override def checkAndGetNextWatermark(lastElement: SensorReading, extractedTimestamp: Long): Watermark = {
-
+    println("extractedTimestamp:"+extractedTimestamp)
     if(lastElement.id.startsWith("sensor_1")){
       new Watermark(extractedTimestamp - delayTime)
     }else{
@@ -48,6 +53,7 @@ class MyAssigner2() extends AssignerWithPunctuatedWatermarks[SensorReading] {
   }
 
   override def extractTimestamp(element: SensorReading, previousElementTimestamp: Long): Long = {
+   // println("previousElementTimestamp:"+previousElementTimestamp)
     element.timestamp * 1000
   }
 }

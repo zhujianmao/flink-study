@@ -21,14 +21,20 @@ object KeyedProcessFunctionTest {
 
     val timeDataStream: DataStream[String] = sensorReadingStream.keyBy(_.id)
       .process(new MyKeyProcessFunction)
-    timeDataStream.print("warning")
-    env.execute("SideOutProcessFunctionTest test")
+
+    timeDataStream.print("healthy")
+    timeDataStream.getSideOutput(new OutputTag[String]("warning")).print("warning")
+
+    env.execute("KeyedProcessFunctionTest test")
   }
 
 }
 
 /**
   * 监控温度传感器的温度值，如果温度值在一秒钟之内(processing time)连续上升，则报警。
+  *
+  *   正常的流
+  *
   */
 class MyKeyProcessFunction extends KeyedProcessFunction[String, SensorReading, String] {
   // 保存上一个传感器温度值
@@ -54,9 +60,10 @@ class MyKeyProcessFunction extends KeyedProcessFunction[String, SensorReading, S
       val ts: Long = ctx.timerService().currentProcessingTime() + 10 * 1000
       ctx.timerService().registerProcessingTimeTimer(ts)
       registerSensorTime.update(ts)
-    } else if (temperatcure < lastTemperature && curTime != 0) {
+    } else if (temperatcure < lastTemperature) {
       ctx.timerService().deleteProcessingTimeTimer(curTime)
       registerSensorTime.clear()
+      out.collect("sensor "+ctx.getCurrentKey+ " 的传感器温度值恢复正常!")
     }
 
   }
@@ -64,7 +71,7 @@ class MyKeyProcessFunction extends KeyedProcessFunction[String, SensorReading, S
   override def onTimer(timestamp: Long,
                        ctx: KeyedProcessFunction[String, SensorReading, String]#OnTimerContext,
                        out: Collector[String]): Unit = {
-    out.collect("sensor " + ctx.getCurrentKey + "的传感器温度值已经连续1s上升了。")
+    ctx.output(new OutputTag[String]("warning"),"sensor " + ctx.getCurrentKey + "的传感器温度值已经连续10s上升了。")
     registerSensorTime.clear()
   }
 }
